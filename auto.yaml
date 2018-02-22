@@ -1,0 +1,28 @@
+# Serverless definition file
+# --------------------------
+# Defines Lambda functions to be deployed to AWS using the Serverless Framework.
+# http://serverless.com
+
+service: auto-services
+
+provider:
+  name: aws
+  runtime: nodejs8.9
+  region: eu-west-2
+  memorySize: 128
+  timeout: 30
+  environment: ${file(env.yml):${self:provider.stage}}
+
+functions:
+  # Get rpm ----------------------------------------------------------------
+  getRPMs:
+    handler: handler.getRPM
+    events:
+      - http:
+          path: /api/v1/analysis/{id}/dynamic/rpm
+          method: get
+          cors:
+            origins:
+              - '*'
+  # Get catalyst... -----------------------------------------------------------------
+- '*'

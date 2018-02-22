@@ -1,0 +1,11 @@
+{
+  "callbackWaitsForEmptyEventLoop": false,
+  "logGroupName": "/aws/lambda/auto-services-dev-getRPM",
+  "logStreamName": "2018/01/22/[$LATEST]XXXXXXX",
+  "functionName": "auto-services-dev-getRPM",
+  "memoryLimitInMB": "128",
+  "functionVersion": "$LATEST",
+  "invokeid": "xxxxx-xxx-xxxx-xxxx-xxxxxxx",
+  "awsRequestId": "xxxxx-xxx-xxxx-xxxx-xxxxxxx",
+  "invokedFunctionArn": "arn:aws:lambda:eu-west-2:351489114719:function:auto-services-dev-getRPM"
+}
